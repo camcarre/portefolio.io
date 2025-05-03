@@ -1,16 +1,26 @@
-# Site Vitrine Personnel - Camille Douaud
+# Portfolio Camille Douaud
 
-Un site vitrine personnel inspiré du design minimaliste et élégant d'Apple, présentant le profil, les compétences, les projets et les expériences de Camille Douaud, étudiant en informatique à Ynov Campus Nantes.
+Portfolio professionnel présentant mon parcours, mes compétences et mes projets dans le domaine de la Data Science et de l'IA.
 
 ## Caractéristiques
 
-- Design moderne inspiré d'Apple.com
-- Site entièrement responsive (mobile, tablette, desktop)
-- Mode sombre/clair automatique et commutable
-- Animations fluides et élégantes
-- Présentation claire des compétences et projets
-- Formulaire de contact fonctionnel (à connecter à un backend)
-- Structure sémantique HTML5
+- Design minimaliste et élégant inspiré d'Apple
+- Chronologie interactive de mon parcours et de mes projets
+- Mode clair/sombre
+- Responsive design
+- Animations fluides
+- Présentation détaillée des projets et compétences
+
+## Technologies utilisées
+
+- HTML5
+- CSS3
+- JavaScript vanilla
+- Animations CSS et JS
+
+## Contact
+
+Pour toute information complémentaire, n'hésitez pas à me contacter via le formulaire de contact sur le site.
 
 ## Structure du Projet
 
