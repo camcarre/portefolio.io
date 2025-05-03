@@ -152,7 +152,6 @@ p {
     transform: translateY(-2px);
 }
 
-/* Header */
 header {
     position: fixed;
     top: 20px;
@@ -294,7 +293,47 @@ input:checked + label:before {
     background-color: white;
 }
 
-/* Hero Section */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1001;
+    margin-left: 20px;
+    position: relative;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-text);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.nav-links.active {
+    display: flex !important;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -350,7 +389,6 @@ input:checked + label:before {
     z-index: 0;
 }
 
-/* About Section */
 .about-section {
     padding: var(--spacing-xl) 0;
     background-color: var(--color-secondary);
@@ -410,7 +448,6 @@ input:checked + label:before {
     color: var(--color-text-secondary);
 }
 
-/* Skills Section */
 .skills-section {
     padding: var(--spacing-xl) 0;
 }
@@ -459,7 +496,6 @@ input:checked + label:before {
     margin-left: -1em;
 }
 
-/* Projects Section */
 .projects-section {
     padding: var(--spacing-xl) 0;
     background-color: var(--color-secondary);
@@ -580,7 +616,6 @@ input:checked + label:before {
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
-/* Experience Section */
 .experience-section {
     padding: var(--spacing-lg) 0;
 }
@@ -648,7 +683,6 @@ input:checked + label:before {
     opacity: 0.5;
 }
 
-/* Expériences navigation */
 .experience-nav {
     margin: var(--spacing-md) 0;
 }
@@ -690,7 +724,6 @@ input:checked + label:before {
     scroll-margin-top: 100px;
 }
 
-/* Contact Section */
 .contact-section {
     padding: var(--spacing-xl) 0;
     background-color: var(--color-secondary);
@@ -776,7 +809,6 @@ textarea {
     resize: vertical;
 }
 
-/* Footer */
 footer {
     padding: var(--spacing-md) 0;
     background-color: var(--color-background);
@@ -791,7 +823,6 @@ footer {
     margin-top: var(--spacing-sm);
 }
 
-/* Section Mes outils préférés */
 .favorite-tools-section {
     padding: var(--spacing-lg) 0;
     background-color: var(--color-secondary);
@@ -846,7 +877,6 @@ footer {
     color: var(--color-text-secondary);
 }
 
-/* Timeline interactive */
 .timeline-section {
     padding: var(--spacing-lg) 0;
     overflow-x: hidden;
@@ -973,7 +1003,6 @@ footer {
     transform: translateY(0);
 }
 
-/* Alternate timeline items (even/odd) */
 .timeline-item:nth-child(even) .timeline-dot {
     margin-top: 20px;
     margin-bottom: 0;
@@ -991,7 +1020,6 @@ footer {
     margin-bottom: 0;
 }
 
-/* Skill sections for detailed competences */
 .competences-section {
     padding: var(--spacing-xl) 0;
 }
@@ -1173,7 +1201,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Nouvelle section chronologie */
 .chronologie-section {
     padding: var(--spacing-xl) 0;
     background-color: var(--color-background);
@@ -1186,27 +1213,56 @@ footer {
     justify-content: center;
     margin-bottom: var(--spacing-lg);
     gap: var(--spacing-sm);
+    flex-wrap: wrap;
 }
 
 .timeline-filter {
-    background: none;
+    background-color: var(--color-background);
     border: 1px solid var(--color-border);
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 500;
     cursor: pointer;
     transition: all var(--transition-fast);
     color: var(--color-text);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    outline: none;
+    position: relative;
+    overflow: hidden;
 }
 
 .timeline-filter:hover {
     background-color: var(--color-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-filter.active {
     background-color: var(--color-primary);
     color: white;
     border-color: var(--color-primary);
+    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.3);
+}
+
+.timeline-filter:focus {
+    outline: none;
+}
+
+.timeline-filter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.timeline-filter:hover::before {
+    transform: translateX(0);
 }
 
 .chrono-container {
@@ -1214,6 +1270,7 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
     padding: 100px 0;
+    overflow: visible;
 }
 
 .chrono-line {
@@ -1225,15 +1282,21 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 4px;
+    z-index: 0;
 }
 
 .chrono-item {
     position: relative;
-    margin-bottom: 120px;
+    margin-bottom: 160px; 
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s ease;
     min-height: 200px;
+    z-index: 1;
+}
+
+.chrono-item:last-child {
+    margin-bottom: 0;
 }
 
 .chrono-item.visible {
@@ -1247,6 +1310,7 @@ footer {
     margin-right: 50px;
     text-align: right;
     width: 40%;
+    z-index: 2;
 }
 
 .chrono-item:nth-child(even) .chrono-content {
@@ -1255,6 +1319,7 @@ footer {
     margin-left: 50px;
     text-align: left;
     width: 40%;
+    z-index: 2;
 }
 
 .chrono-dot {

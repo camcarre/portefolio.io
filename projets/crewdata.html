@@ -7,6 +7,8 @@
     <meta name="description" content="CrewData - Outil d'analyse CSV utilisant des agents IA pour traiter et visualiser automatiquement les données.">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -15,6 +17,7 @@
     <script src="../js/theme-switch.js" defer></script>
     <script src="../js/animations.js" defer></script>
     <script src="../js/main.js" defer></script>
+    <script src="../js/mobile-menu.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,7 +39,8 @@
                         <label for="theme-toggle"></label>
                     </div>
                 </div>
-                <div class="mobile-menu-btn">
+                <div class="hamburger-menu">
+                    <span></span>
                     <span></span>
                     <span></span>
                 </div>
@@ -57,13 +61,20 @@
                         Retour aux projets
                     </a>
                 </div>
-                <h1>CrewData</h1>
-                <p class="project-subtitle">Outil d'analyse CSV avec agents IA</p>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">AI</span>
-                    <span class="tag">CrewAI</span>
-                    <span class="tag">Analyse de données</span>
+                <div class="project-hero-header">
+                    <div class="project-logo">
+                        <img src="../images/project-logos/crewdata.png" alt="Logo CrewData">
+                    </div>
+                    <div class="project-info">
+                        <h1>CrewData</h1>
+                        <p class="project-subtitle">Outil d'analyse CSV avec agents IA</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">CrewAI</span>
+                            <span class="tag">Analyse de données</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -192,13 +203,8 @@
                 <h2>Autres projets</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="project-image" style="background-color: #f5f5f7;">
-                            <div class="icon-wrapper">
-                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
+                        <div class="project-image">
+                            <img src="../images/project-logos/healtbot.png" alt="Logo HealthBot">
                         </div>
                         <div class="project-content">
                             <h3>HealthBot</h3>
@@ -208,15 +214,8 @@
                     </div>
 
                     <div class="project-card">
-                        <div class="project-image" style="background-color: #f5f5f7;">
-                            <div class="icon-wrapper">
-                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15 7C16.1046 7 17 6.10457 17 5C17 3.89543 16.1046 3 15 3C13.8954 3 13 3.89543 13 5C13 6.10457 13.8954 7 15 7Z" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M12 15L9 12L12 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M9 21C10.1046 21 11 20.1046 11 19C11 17.8954 10.1046 17 9 17C7.89543 17 7 17.8954 7 19C7 20.1046 7.89543 21 9 21Z" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M9 12C10.1046 12 11 11.1046 11 10C11 8.89543 10.1046 8 9 8C7.89543 8 7 8.89543 7 10C7 11.1046 7.89543 12 9 12Z" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
+                        <div class="project-image">
+                            <img src="../images/project-logos/justedance.png" alt="Logo JusteDanse">
                         </div>
                         <div class="project-content">
                             <h3>JusteDanse</h3>
@@ -231,7 +230,6 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Camille Douaud. Tous droits réservés.</p>
             <p class="footer-links">
                 <a href="../index.html#hero">Accueil</a>
                 <a href="../index.html#about">À propos</a>
