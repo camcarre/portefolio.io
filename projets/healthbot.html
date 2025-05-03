@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthBot - Projet de Camille Douaud</title>
+    <meta name="description" content="HealthBot - Assistant IA combinant LLM et données de santé pour fournir des informations personnalisées.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <script src="../js/theme-switch.js" defer></script>
+    <script src="../js/animations.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">
+                    <img src="../images/logofondblanc.png" alt="Logo Camille Douaud" id="logo-image">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="../index.html#about">À propos</a></li>
+                    <li><a href="../index.html#skills">Compétences</a></li>
+                    <li><a href="../index.html#projects">Projets</a></li>
+                    <li><a href="../index.html#experience">Expériences</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="theme-switch">
+                    <div class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <label for="theme-toggle"></label>
+                    </div>
+                </div>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- En-tête du projet -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="back-link">
+                    <a href="../index.html#projects">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Retour aux projets
+                    </a>
+                </div>
+                <h1>HealthBot</h1>
+                <p class="project-subtitle">Assistant IA combinant LLM et données de santé</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">LLM</span>
+                    <span class="tag">Données de santé</span>
+                    <span class="tag">IA</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Présentation du projet -->
+        <section class="project-overview">
+            <div class="container">
+                <div class="project-content">
+                    <h2>Présentation du projet</h2>
+                    <p>HealthBot est un assistant IA innovant conçu pour combiner la puissance des modèles de langage (LLM) avec des données de santé pour fournir des informations personnalisées et pertinentes aux utilisateurs.</p>
+                    
+                    <p>Ce projet répond à un besoin croissant d'accès à des informations médicales fiables et personnalisées, tout en assurant la confidentialité des données des utilisateurs.</p>
+
+                    <div class="project-image">
+                        <img src="../images/projects/healthbot.jpg" alt="Interface de HealthBot" class="img-placeholder">
+                    </div>
+
+                    <h2>Fonctionnalités principales</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="feature-icon">🔍</span>
+                            <div class="feature-content">
+                                <h3>Analyse de données personnelles</h3>
+                                <p>HealthBot peut analyser les données de santé des utilisateurs pour fournir des recommandations personnalisées.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">💬</span>
+                            <div class="feature-content">
+                                <h3>Conversation naturelle</h3>
+                                <p>Interface conversationnelle intuitive qui permet aux utilisateurs d'obtenir des informations médicales en langage naturel.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">🔒</span>
+                            <div class="feature-content">
+                                <h3>Confidentialité des données</h3>
+                                <p>Système de sécurité avancé pour protéger les informations médicales sensibles des utilisateurs.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">📊</span>
+                            <div class="feature-content">
+                                <h3>Visualisation des données</h3>
+                                <p>Représentations graphiques des données de santé pour faciliter la compréhension des tendances et des recommandations.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h2>Technologies utilisées</h2>
+                    <div class="technologies">
+                        <div class="tech-item">
+                            <h3>Backend</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>FastAPI</li>
+                                <li>LangChain</li>
+                                <li>Ollama</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>IA & Modèles</h3>
+                            <ul>
+                                <li>Llama 2</li>
+                                <li>Semantic Kernel</li>
+                                <li>Pandas</li>
+                                <li>NumPy</li>
+                                <li>Scikit-learn</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Frontend</h3>
+                            <ul>
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Tailwind CSS</li>
+                                <li>Chart.js</li>
+                                <li>Axios</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>Ma contribution</h2>
+                    <p>Dans ce projet, j'ai été responsable de :</p>
+                    <ul class="contribution-list">
+                        <li>Conception de l'architecture de l'assistant IA intégrant les LLM avec les données médicales</li>
+                        <li>Développement du système de traitement et d'analyse des données de santé</li>
+                        <li>Implémentation des mécanismes de sécurité et de confidentialité des données</li>
+                        <li>Création des modèles de représentation des connaissances médicales</li>
+                        <li>Optimisation des performances du système pour une expérience utilisateur fluide</li>
+                    </ul>
+
+                    <h2>Défis et apprentissages</h2>
+                    <p>Ce projet m'a permis de relever plusieurs défis importants :</p>
+                    <div class="challenges">
+                        <div class="challenge-item">
+                            <h3>Précision médicale</h3>
+                            <p>Assurer que les informations médicales fournies sont précises et fiables a nécessité une vérification rigoureuse des sources et des algorithmes.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Confidentialité</h3>
+                            <p>La conception d'un système respectant les normes strictes de confidentialité des données médicales a été un défi majeur mais essentiel.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Personnalisation</h3>
+                            <p>Créer un système capable de fournir des recommandations véritablement personnalisées a nécessité des algorithmes d'apprentissage avancés.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/camcarre/healthbot" target="_blank" class="btn btn-primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 19C4.7 20.4 4.7 16.5 3 16M15 21V17.5C15 16.5 15.1 16.1 14.5 15.5C17.3 15.2 20 14.1 20 9.50001C19.9988 8.30498 19.5549 7.15732 18.76 6.30001C19.1334 5.27166 19.1114 4.13921 18.7 3.13001C18.7 3.13001 17.7 2.80001 15.5 4.10001C13.5883 3.5341 11.5117 3.5341 9.6 4.10001C7.4 2.80001 6.4 3.13001 6.4 3.13001C5.98865 4.13921 5.96661 5.27166 6.34 6.30001C5.54513 7.15732 5.10118 8.30498 5.1 9.50001C5.1 14.1 7.8 15.2 10.6 15.5C10 16.1 10 16.5 10 17.5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projets associés -->
+        <section class="related-projects">
+            <div class="container">
+                <h2>Autres projets</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: #f5f5f7;">
+                            <div class="icon-wrapper">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 7C16.1046 7 17 6.10457 17 5C17 3.89543 16.1046 3 15 3C13.8954 3 13 3.89543 13 5C13 6.10457 13.8954 7 15 7Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 15L9 12L12 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M9 21C10.1046 21 11 20.1046 11 19C11 17.8954 10.1046 17 9 17C7.89543 17 7 17.8954 7 19C7 20.1046 7.89543 21 9 21Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M9 12C10.1046 12 11 11.1046 11 10C11 8.89543 10.1046 8 9 8C7.89543 8 7 8.89543 7 10C7 11.1046 7.89543 12 9 12Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>JusteDanse</h3>
+                            <p>Système IoT de détection de mouvements pour analyser et améliorer les performances de danse.</p>
+                            <a href="justedanse.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: #f5f5f7;">
+                            <div class="icon-wrapper">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 5H15M9 5V3M9 5V7M15 5H21M3 9H21M3 13H21M3 17H21M3 21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>CrewData</h3>
+                            <p>Outil d'analyse CSV utilisant des agents IA pour traiter et visualiser automatiquement les données.</p>
+                            <a href="crewdata.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Camille Douaud. Tous droits réservés.</p>
+            <p class="footer-links">
+                <a href="../index.html#hero">Accueil</a>
+                <a href="../index.html#about">À propos</a>
+                <a href="../index.html#skills">Compétences</a>
+                <a href="../index.html#projects">Projets</a>
+                <a href="../index.html#experience">Expériences</a>
+                <a href="../index.html#contact">Contact</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

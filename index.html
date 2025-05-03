@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camille Douaud | Data Science & Ingénierie des Données</title>
+    <meta name="description" content="Portfolio de Camille Douaud, étudiant en informatique à Ynov Campus Nantes et passionné par la data et les systèmes intelligents.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <script src="js/theme-switch.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/timeline-animation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logofondblanc.png" alt="Logo Camille Douaud" id="logo-image">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#favorite-tools">Mes outils</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#chronologie">Chronologie</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#experience">Expériences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-switch">
+                    <div class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <label for="theme-toggle"></label>
+                    </div>
+                </div>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="reveal-text">Passionné de données et d'intelligence, prêt à relever des défis réels</h1>
+                    <p class="subtitle reveal-text">Recherche alternance Data – Septembre 2025 | 2 sem. entreprise / 1 sem. école</p>
+                    <div class="hero-buttons">
+                        <a href="docs/CV_Camille_Douaud.pdf" class="btn btn-primary" download>Télécharger le CV</a>
+                        <a href="#projects" class="btn btn-secondary">Projets</a>
+                        <a href="#contact" class="btn btn-secondary">Contact</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="grid-animation"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>À propos</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Étudiant à Ynov Nantes, passionné par les systèmes intelligents, la data et la création d'outils concrets. J'aime apprendre en testant, comprendre en faisant, et aller au bout des choses.</p>
+                        <p>Sportif (course, natation), j'applique aussi cette rigueur dans mes projets tech.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="profile-frame">
+                            <img src="images/profile.jpg" alt="Camille Douaud" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Compétences</h2>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <h3>Hard Skills</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item">Python</li>
+                            <li class="skill-item">Golang</li>
+                            <li class="skill-item">TypeScript</li>
+                            <li class="skill-item">SQL</li>
+                            <li class="skill-item">Power BI</li>
+                            <li class="skill-item">Ollama</li>
+                            <li class="skill-item">CrewAI</li>
+                            <li class="skill-item">Automatisation</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Soft Skills</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item">Curiosité</li>
+                            <li class="skill-item">Rigueur</li>
+                            <li class="skill-item">Adaptabilité</li>
+                            <li class="skill-item">Communication</li>
+                            <li class="skill-item">Autonomie</li>
+                            <li class="skill-item">Persévérance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="favorite-tools" class="favorite-tools-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Mes outils préférés</h2>
+                </div>
+                <div class="tools-container">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <img src="images/icons/python.svg" alt="Python">
+                        </div>
+                        <h3>Python</h3>
+                        <p class="tool-opinion">"Mon langage principal pour le développement data, j'apprécie sa simplicité et son écosystème riche."</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <img src="images/icons/powerbi.svg" alt="Power BI">
+                        </div>
+                        <h3>Power BI</h3>
+                        <p class="tool-opinion">"J'adore Power BI pour sa facilité à transformer des données brutes en visualisations interactives."</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <img src="images/icons/pandas.svg" alt="Pandas">
+                        </div>
+                        <h3>Pandas</h3>
+                        <p class="tool-opinion">"Incontournable pour la manipulation de données, cette librairie me permet de transformer rapidement des datasets."</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <img src="images/icons/vscode.svg" alt="VS Code">
+                        </div>
+                        <h3>VS Code</h3>
+                        <p class="tool-opinion">"Mon éditeur de code préféré, à la fois léger et puissant avec ses nombreuses extensions."</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <img src="images/icons/ollama.svg" alt="Ollama">
+                        </div>
+                        <h3>Ollama</h3>
+                        <p class="tool-opinion">"Ollama me fascine parce qu'il me permet d'exécuter des modèles d'IA localement, préservant la confidentialité des données."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Projets</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: #f5f5f7;">
+                            <div class="icon-wrapper">
+                                <img src="images/project-logos/healtbot.png" alt="HealthBot Logo" class="project-logo">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>HealthBot</h3>
+                            <p>Assistant IA combinant LLM et données de santé pour fournir des informations personnalisées.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">LLM</span>
+                                <span class="tag">Data</span>
+                            </div>
+                            <a href="projets/healthbot.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: #f5f5f7;">
+                            <div class="icon-wrapper">
+                                <img src="images/project-logos/justedance.png" alt="JusteDanse Logo" class="project-logo">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>JusteDanse</h3>
+                            <p>Système IoT de détection de gestes pour analyser et améliorer les performances de danse.</p>
+                            <div class="project-tags">
+                                <span class="tag">IoT</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Capteurs</span>
+                            </div>
+                            <a href="projets/justedanse.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: #f5f5f7;">
+                            <div class="icon-wrapper">
+                                <img src="images/project-logos/crewdata.png" alt="CrewData Logo" class="project-logo">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>CrewData</h3>
+                            <p>Outil d'analyse CSV utilisant des agents IA pour traiter et visualiser automatiquement les données.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">AI</span>
+                                <span class="tag">CrewAI</span>
+                            </div>
+                            <a href="projets/crewdata.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chronologie" class="chronologie-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ma chronologie</h2>
+                    <p class="subtitle">Mon parcours académique et mes projets</p>
+                </div>
+                
+                <div class="timeline-navigation">
+                    <button class="timeline-filter active" data-filter="all">Tout</button>
+                    <button class="timeline-filter" data-filter="education">Formation</button>
+                    <button class="timeline-filter" data-filter="project">Projets</button>
+                </div>
+                
+                <div class="chrono-container">
+                    <div class="chrono-line"></div>
+                    
+                    <div class="chrono-item" data-category="education">
+                        <div class="chrono-dot"></div>
+                        <div class="chrono-content">
+                            <div class="chrono-date">2023 - 2025</div>
+                            <div class="chrono-card">
+                                <div class="chrono-icon">
+                                    <img src="images/cv-logos/logoynov.png" alt="Ynov Campus">
+                                </div>
+                                <h3>Bachelor Informatique</h3>
+                                <p>Spécialisation Data Science & IA</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chrono-item" data-category="project">
+                        <div class="chrono-dot"></div>
+                        <div class="chrono-content">
+                            <div class="chrono-date">2024</div>
+                            <div class="chrono-card">
+                                <div class="chrono-icon">
+                                    <img src="images/project-logos/crewdata.png" alt="CrewData Logo">
+                                </div>
+                                <h3>CrewData</h3>
+                                <p>Outil d'analyse CSV avec agents IA</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">AI</span>
+                                </div>
+                                <a href="projets/crewdata.html" class="project-link">Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chrono-item" data-category="project">
+                        <div class="chrono-dot"></div>
+                        <div class="chrono-content">
+                            <div class="chrono-date">2023</div>
+                            <div class="chrono-card">
+                                <div class="chrono-icon">
+                                    <img src="images/project-logos/healtbot.png" alt="HealthBot Logo">
+                                </div>
+                                <h3>HealthBot</h3>
+                                <p>Assistant IA pour la santé</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">LLM</span>
+                                </div>
+                                <a href="projets/healthbot.html" class="project-link">Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chrono-item" data-category="education">
+                        <div class="chrono-dot"></div>
+                        <div class="chrono-content">
+                            <div class="chrono-date">2019 - 2023</div>
+                            <div class="chrono-card">
+                                <div class="chrono-icon">
+                                    <img src="images/cv-logos/logolycée.png" alt="Lycée François Arago">
+                                </div>
+                                <h3>Bac Pro Système Numérique</h3>
+                                <p>Lycée François Arago, Nantes</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chrono-item" data-category="project">
+                        <div class="chrono-dot"></div>
+                        <div class="chrono-content">
+                            <div class="chrono-date">2022</div>
+                            <div class="chrono-card">
+                                <div class="chrono-icon">
+                                    <img src="images/project-logos/justedance.png" alt="JusteDanse Logo">
+                                </div>
+                                <h3>JusteDanse</h3>
+                                <p>Système IoT de détection de gestes</p>
+                                <div class="project-tags">
+                                    <span class="tag">IoT</span>
+                                    <span class="tag">Python</span>
+                                </div>
+                                <a href="projets/justedanse.html" class="project-link">Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="competences-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Compétences détaillées</h2>
+                </div>
+                <div class="skills-detailed-content">
+                    <div class="skills-category">
+                        <h3>Langages de programmation</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Golang</li>
+                            <li>TypeScript</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Développement web / programmation</h3>
+                        <ul>
+                            <li>Développement web & API</li>
+                            <li>Programmation structurée</li>
+                            <li>Création de sites et applications web</li>
+                            <li>Notions en microcontrôleurs / IoT</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Analyse & traitement de données</h3>
+                        <ul>
+                            <li>Power BI</li>
+                            <li>Excel</li>
+                            <li>Analyse et traitement de données</li>
+                            <li>Automatisation de processus</li>
+                            <li>Études et implémentations d'algorithmes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Outils & technologies IA/Data</h3>
+                        <ul>
+                            <li>Ollama</li>
+                            <li>CrewAI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Expériences</h2>
+                </div>
+                
+                <div class="experience-nav">
+                    <ul>
+                        <li><a href="#exp-euklead">Développeur DATA – Euklead (Stage)</a></li>
+                        <li><a href="#exp-leclerc">Employé Polyvalent – E.Leclerc Atlantis</a></li>
+                        <li><a href="#exp-best">Assistant Technicien – Best Atlantique</a></li>
+                        <li><a href="#exp-extra">Assistant Technicien – Extra</a></li>
+                    </ul>
+                </div>
+                
+                <div class="experience-content">
+                    <div class="experience-item" id="exp-euklead">
+                        <div class="experience-header">
+                            <h3>Développeur DATA – Euklead (Stage à venir)</h3>
+                            <div class="experience-meta">
+                                <span class="experience-location">Saint Nazaire</span>
+                                <span class="experience-date">06/2025 – 07/2025</span>
+                            </div>
+                        </div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Développement et amélioration d'une plateforme web basée sur Power BI (UX/UI, sécurité, fonctionnalités)</li>
+                                <li>Création de dashboards & indicateurs métiers, visualisation de données</li>
+                                <li>Automatisation de processus (collecte, analyse, reporting)</li>
+                                <li>Présentations, maquettes et tests auprès des utilisateurs (clients/fournisseurs)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="separator"></div>
+                    
+                    <div class="experience-item" id="exp-leclerc">
+                        <div class="experience-header">
+                            <h3>Employé Polyvalent – E.Leclerc Atlantis (Contrat étudiant)</h3>
+                            <div class="experience-meta">
+                                <span class="experience-location">Nantes</span>
+                                <span class="experience-date">10/2024 – Aujourd'hui</span>
+                            </div>
+                        </div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Création d'un tableau de bord de planification RH pour 135 employés (traiteur + drive)</li>
+                                <li>Réassort, service client, respect des normes d'hygiène</li>
+                                <li>Entretien du poste de travail</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="separator"></div>
+                    
+                    <div class="experience-item" id="exp-best">
+                        <div class="experience-header">
+                            <h3>Assistant Technicien de Maintenance – Best Atlantique (Stage)</h3>
+                            <div class="experience-meta">
+                                <span class="experience-location">Nantes</span>
+                                <span class="experience-date">06/2022 – 06/2022</span>
+                            </div>
+                        </div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Maintenance d'appareils professionnels en binôme</li>
+                                <li>Découverte terrain en environnement industriel</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="separator"></div>
+                    
+                    <div class="experience-item" id="exp-extra">
+                        <div class="experience-header">
+                            <h3>Assistant Technicien de Maintenance – Extra (Stages)</h3>
+                            <div class="experience-meta">
+                                <span class="experience-location">Pornic</span>
+                                <span class="experience-date">02/2020, 06/2020, 11/2021</span>
+                            </div>
+                        </div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Installation et dépannage de matériel électroménager et multimédia</li>
+                                <li>Contact direct clients particuliers et professionnels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p>Vous pouvez me contacter directement :</p>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <a href="mailto:camille.douaud@ynov.com">camille.douaud@ynov.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.3283 14.4353 9.65339 14.3097 9.95671C14.1841 10.26 14.0004 10.5356 13.7678 10.7678C13.5356 11.0004 13.26 11.1841 12.9567 11.3097C12.6534 11.4353 12.3283 11.5 12 11.5ZM12 2C10.1435 2 8.36301 2.7375 7.05025 4.05025C5.7375 5.36301 5 7.14348 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 7.14348 18.2625 5.36301 16.9497 4.05025C15.637 2.7375 13.8565 2 12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Nantes, France</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/camcarre" target="_blank" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 19C4.7 20.4 4.7 16.5 3 16M15 21V17.5C15 16.5 15.1 16.1 14.5 15.5C17.3 15.2 20 14.1 20 9.50001C19.9988 8.30498 19.5549 7.15732 18.76 6.30001C19.1334 5.27166 19.1114 4.13921 18.7 3.13001C18.7 3.13001 17.7 2.80001 15.5 4.10001C13.5883 3.5341 11.5117 3.5341 9.6 4.10001C7.4 2.80001 6.4 3.13001 6.4 3.13001C5.98865 4.13921 5.96661 5.27166 6.34 6.30001C5.54513 7.15732 5.10118 8.30498 5.1 9.50001C5.1 14.1 7.8 15.2 10.6 15.5C10 16.1 10 16.5 10 17.5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/camille-douaud-368917331" target="_blank" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-links">
+                <a href="#about">À propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#favorite-tools">Mes outils</a>
+                <a href="#projects">Projets</a>
+                <a href="#chronologie">Chronologie</a>
+                <a href="#competences">Compétences</a>
+                <a href="#experience">Expériences</a>
+                <a href="#contact">Contact</a>
+            </p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

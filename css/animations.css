@@ -1,0 +1,276 @@
+/* 
+* Animations Stylesheet
+* Inspiré des animations fluides et élégantes d'Apple
+* Pour le site vitrine de Camille Douaud
+*/
+
+/* Animations d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation des textes */
+@keyframes revealText {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* Animation de la grille */
+@keyframes gridReveal {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animation des points dans la timeline */
+@keyframes pulseDot {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 102, 204, 0.7);
+    }
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(0, 102, 204, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 102, 204, 0);
+    }
+}
+
+/* Classes d'animation pour le scroll */
+.reveal-text {
+    position: relative;
+    overflow: hidden;
+}
+
+.reveal-text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    transform: translateX(-100%);
+    animation: reveal 0.8s ease forwards;
+}
+
+@keyframes reveal {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Animations au scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-delay-100 {
+    transition-delay: 0.1s;
+}
+
+.animate-delay-200 {
+    transition-delay: 0.2s;
+}
+
+.animate-delay-300 {
+    transition-delay: 0.3s;
+}
+
+.animate-delay-400 {
+    transition-delay: 0.4s;
+}
+
+.animate-delay-500 {
+    transition-delay: 0.5s;
+}
+
+/* Effet de hover sur les cartes */
+.project-card {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-card:hover {
+    transform: scale(1.03) translateY(-10px);
+    z-index: 1;
+}
+
+/* Animation de la grille du hero */
+.grid-animation {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0.3;
+}
+
+.grid-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(to right, var(--color-primary) 1px, transparent 1px) 0 0,
+        linear-gradient(to bottom, var(--color-primary) 1px, transparent 1px) 0 0;
+    background-size: 40px 40px;
+    animation: gridReveal 1.5s ease forwards;
+}
+
+/* Animation pour le menu mobile */
+.mobile-menu-btn span:nth-child(1) {
+    transform-origin: left;
+}
+
+.mobile-menu-btn span:nth-child(2) {
+    transform-origin: left;
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+/* Animation pour le bouton de téléchargement */
+.btn-primary {
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0s;
+}
+
+.btn-primary:hover::after {
+    transform: translateX(100%);
+    transition: transform 0.6s cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+/* Animation des labels du formulaire */
+.form-group {
+    position: relative;
+}
+
+.form-group label {
+    transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    transform: translateY(-20px);
+    color: var(--color-primary);
+    font-size: 0.85rem;
+}
+
+/* Animation des points de la timeline */
+.timeline-dot {
+    animation: pulseDot 2s infinite;
+}
+
+/* Animation de scroll pour les sections */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Effet parallaxe subtil */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(-10px) scale(2);
+    z-index: -1;
+}

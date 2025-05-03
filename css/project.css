@@ -1,0 +1,258 @@
+/* 
+* Project Page Stylesheet
+* Styles spécifiques pour les pages détaillées de projets
+* Pour le site vitrine de Camille Douaud
+*/
+
+/* En-tête du projet */
+.project-hero {
+    padding: calc(var(--header-height) + var(--spacing-md)) 0 var(--spacing-lg);
+    background-color: var(--color-secondary);
+}
+
+.back-link {
+    margin-bottom: var(--spacing-md);
+}
+
+.back-link a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-text);
+    font-weight: 500;
+    transition: transform var(--transition-fast);
+}
+
+.back-link a svg {
+    margin-right: var(--spacing-xs);
+}
+
+.back-link a:hover {
+    transform: translateX(-5px);
+    color: var(--color-primary);
+}
+
+.project-hero h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.project-subtitle {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+/* Contenu du projet */
+.project-overview {
+    padding: var(--spacing-xl) 0;
+}
+
+.project-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-content h2 {
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project-content h2:first-child {
+    margin-top: 0;
+}
+
+.project-content p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+}
+
+.project-image {
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary);
+    font-size: 1.2rem;
+}
+
+/* Liste de fonctionnalités */
+.feature-list {
+    margin: var(--spacing-md) 0;
+}
+
+.feature-list li {
+    display: flex;
+    margin-bottom: var(--spacing-md);
+    gap: var(--spacing-md);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-highlight);
+    border-radius: 50%;
+    color: var(--color-primary);
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-content h3 {
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Technologies */
+.technologies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0 var(--spacing-lg);
+}
+
+.tech-item {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    transition: transform var(--transition-medium);
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+}
+
+.tech-item h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.tech-item ul {
+    list-style: disc;
+    padding-left: var(--spacing-md);
+}
+
+.tech-item li {
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Contribution */
+.contribution-list {
+    list-style: disc;
+    padding-left: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.contribution-list li {
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.6;
+}
+
+/* Défis */
+.challenges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0 var(--spacing-lg);
+}
+
+.challenge-item {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    transition: transform var(--transition-medium);
+}
+
+.challenge-item:hover {
+    transform: translateY(-5px);
+}
+
+.challenge-item h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+/* Liens du projet */
+.project-links {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.project-links .btn {
+    display: flex;
+    align-items: center;
+}
+
+.project-links .btn svg {
+    margin-right: var(--spacing-xs);
+}
+
+/* Projets associés */
+.related-projects {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-secondary);
+}
+
+.related-projects h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .project-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .technologies,
+    .challenges {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-list li {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-hero h1 {
+        font-size: 2rem;
+    }
+}

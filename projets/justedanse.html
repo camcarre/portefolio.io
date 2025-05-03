@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JusteDanse - Projet de Camille Douaud</title>
+    <meta name="description" content="JusteDanse - Système IoT de détection de mouvements pour analyser et améliorer les performances de danse.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <script src="../js/theme-switch.js" defer></script>
+    <script src="../js/animations.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">
+                    <img src="../images/logofondblanc.png" alt="Logo Camille Douaud" id="logo-image">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="../index.html#about">À propos</a></li>
+                    <li><a href="../index.html#skills">Compétences</a></li>
+                    <li><a href="../index.html#projects">Projets</a></li>
+                    <li><a href="../index.html#experience">Expériences</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="theme-switch">
+                    <div class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <label for="theme-toggle"></label>
+                    </div>
+                </div>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- En-tête du projet -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="back-link">
+                    <a href="../index.html#projects">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Retour aux projets
+                    </a>
+                </div>
+                <h1>JusteDanse</h1>
+                <p class="project-subtitle">Système IoT de détection de mouvements pour la danse</p>
+                <div class="project-tags">
+                    <span class="tag">IoT</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Capteurs</span>
+                    <span class="tag">Machine Learning</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Présentation du projet -->
+        <section class="project-overview">
+            <div class="container">
+                <div class="project-content">
+                    <h2>Présentation du projet</h2>
+                    <p>JusteDanse est un système innovant utilisant des capteurs IoT et des algorithmes de machine learning pour analyser les mouvements de danse et fournir un retour en temps réel aux danseurs pour améliorer leurs performances.</p>
+                    
+                    <p>Ce projet combine hardware et software pour créer une solution complète permettant aux danseurs amateurs et professionnels d'analyser et d'améliorer leur technique de manière objective et personnalisée.</p>
+
+                    <div class="project-image">
+                        <img src="../images/projects/justedanse.jpg" alt="Système JusteDanse en action" class="img-placeholder">
+                    </div>
+
+                    <h2>Fonctionnalités principales</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="feature-icon">📡</span>
+                            <div class="feature-content">
+                                <h3>Capteurs de mouvement</h3>
+                                <p>Réseau de capteurs portables qui s'attachent aux articulations principales pour suivre les mouvements avec précision.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">⚡</span>
+                            <div class="feature-content">
+                                <h3>Analyse en temps réel</h3>
+                                <p>Traitement des données de mouvement en temps réel pour fournir un feedback immédiat pendant l'entraînement.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">📊</span>
+                            <div class="feature-content">
+                                <h3>Visualisation des performances</h3>
+                                <p>Interface intuitive montrant les mouvements, les points d'amélioration et les progrès au fil du temps.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">🧠</span>
+                            <div class="feature-content">
+                                <h3>Apprentissage personnalisé</h3>
+                                <p>Algorithmes qui s'adaptent au style et au niveau du danseur pour fournir un feedback personnalisé.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h2>Technologies utilisées</h2>
+                    <div class="technologies">
+                        <div class="tech-item">
+                            <h3>Hardware</h3>
+                            <ul>
+                                <li>Capteurs MPU-9250 (accéléromètre, gyroscope)</li>
+                                <li>Microcontrôleurs ESP32</li>
+                                <li>Modules Bluetooth Low Energy</li>
+                                <li>Batteries LiPo</li>
+                                <li>Boîtiers imprimés en 3D</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Backend</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>TensorFlow</li>
+                                <li>Flask</li>
+                                <li>SQLite</li>
+                                <li>Raspberry Pi (hub central)</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Frontend</h3>
+                            <ul>
+                                <li>React</li>
+                                <li>Three.js (visualisation 3D)</li>
+                                <li>D3.js (graphiques)</li>
+                                <li>WebSockets</li>
+                                <li>Progressive Web App</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>Ma contribution</h2>
+                    <p>Dans ce projet, j'ai été responsable de :</p>
+                    <ul class="contribution-list">
+                        <li>Conception et développement du système de collecte de données des capteurs</li>
+                        <li>Création des algorithmes de reconnaissance de mouvements basés sur le machine learning</li>
+                        <li>Développement du protocole de communication sans fil entre les capteurs et le hub central</li>
+                        <li>Optimisation des algorithmes pour le traitement en temps réel</li>
+                        <li>Intégration des visualisations 3D des mouvements dans l'interface utilisateur</li>
+                    </ul>
+
+                    <h2>Défis et apprentissages</h2>
+                    <p>Ce projet m'a permis de relever plusieurs défis importants :</p>
+                    <div class="challenges">
+                        <div class="challenge-item">
+                            <h3>Précision des capteurs</h3>
+                            <p>Garantir des mesures précises avec des capteurs portables légers a nécessité des techniques avancées de filtrage et de fusion de données.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Latence</h3>
+                            <p>Minimiser la latence pour fournir un feedback vraiment en temps réel a exigé une optimisation poussée des algorithmes et protocoles de communication.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Autonomie énergétique</h3>
+                            <p>Concevoir un système suffisamment économe en énergie pour permettre plusieurs heures d'utilisation continue a été un défi majeur.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/camcarre/justedanse" target="_blank" class="btn btn-primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 19C4.7 20.4 4.7 16.5 3 16M15 21V17.5C15 16.5 15.1 16.1 14.5 15.5C17.3 15.2 20 14.1 20 9.50001C19.9988 8.30498 19.5549 7.15732 18.76 6.30001C19.1334 5.27166 19.1114 4.13921 18.7 3.13001C18.7 3.13001 17.7 2.80001 15.5 4.10001C13.5883 3.5341 11.5117 3.5341 9.6 4.10001C7.4 2.80001 6.4 3.13001 6.4 3.13001C5.98865 4.13921 5.96661 5.27166 6.34 6.30001C5.54513 7.15732 5.10118 8.30498 5.1 9.50001C5.1 14.1 7.8 15.2 10.6 15.5C10 16.1 10 16.5 10 17.5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projets associés -->
+        <section class="related-projects">
+            <div class="container">
+                <h2>Autres projets</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: #f5f5f7;">
+                            <div class="icon-wrapper">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>HealthBot</h3>
+                            <p>Assistant IA combinant LLM et données de santé pour fournir des informations personnalisées.</p>
+                            <a href="healthbot.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: #f5f5f7;">
+                            <div class="icon-wrapper">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 5H15M9 5V3M9 5V7M15 5H21M3 9H21M3 13H21M3 17H21M3 21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>CrewData</h3>
+                            <p>Outil d'analyse CSV utilisant des agents IA pour traiter et visualiser automatiquement les données.</p>
+                            <a href="crewdata.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Camille Douaud. Tous droits réservés.</p>
+            <p class="footer-links">
+                <a href="../index.html#hero">Accueil</a>
+                <a href="../index.html#about">À propos</a>
+                <a href="../index.html#skills">Compétences</a>
+                <a href="../index.html#projects">Projets</a>
+                <a href="../index.html#experience">Expériences</a>
+                <a href="../index.html#contact">Contact</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
