@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Planner - Projet de Camille Douaud</title>
+    <meta name="description" content="Smart Planner - Application de planification RH intelligente générant des plannings optimisés sous contraintes.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <script src="../js/theme-switch.js" defer></script>
+    <script src="../js/animations.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/mobile-menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/logofondblanc.png" alt="Logo Camille Douaud" id="logo-image">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html#about">À propos</a></li>
+                    <li><a href="../index.html#skills">Compétences</a></li>
+                    <li><a href="../index.html#favorite-tools">Mes outils</a></li>
+                    <li><a href="../index.html#projects">Projets</a></li>
+                    <li><a href="../index.html#chronologie">Chronologie</a></li>
+                    <li><a href="../index.html#competences">Compétences</a></li>
+                    <li><a href="../index.html#experience">Expériences</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="theme-switch">
+                    <div class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <label for="theme-toggle"></label>
+                    </div>
+                </div>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- En-tête du projet -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="back-link">
+                    <a href="../index.html#projects">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Retour aux projets
+                    </a>
+                </div>
+                <div class="project-hero-header">
+                    <div class="project-logo">
+                        <img src="../images/project-logos/smartplanner.png" alt="Logo Smart Planner">
+                    </div>
+                    <div class="project-info">
+                        <h1>Smart Planner</h1>
+                        <p class="project-subtitle">Application de planification RH intelligente</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">React</span>
+                            <span class="tag">OR-Tools</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Présentation du projet -->
+        <section class="project-overview">
+            <div class="container">
+                <div class="project-content">
+                    <h2>Présentation du projet</h2>
+                    <p><strong>Smart Planner</strong> est une application web de planification RH intelligente, capable de générer automatiquement des plannings optimisés pour les équipes, tout en respectant l'ensemble des contraintes légales, conventionnelles et internes.</p>
+                    <p>Ce projet répond à un besoin crucial des entreprises : simplifier la gestion des plannings, garantir la conformité et offrir une expérience moderne aux managers comme aux employés.</p>
+
+                    <div class="project-image">
+                        <img src="../images/smartpannerview.jpg" alt="Interface de Smart Planner" class="img-placeholder">
+                    </div>
+
+                    <h2>Fonctionnalités principales</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="feature-icon">⚡</span>
+                            <div class="feature-content">
+                                <h3>Génération automatique de plannings</h3>
+                                <p>Optimisation des emplois du temps grâce à OR-Tools, en tenant compte de toutes les contraintes (légales, CCN, internes).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">👥</span>
+                            <div class="feature-content">
+                                <h3>Gestion RH complète</h3>
+                                <p>Gestion des employés, contrats, absences, et besoins en effectif, avec duplication facilitée.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">🛡️</span>
+                            <div class="feature-content">
+                                <h3>Moteur de règles avancé</h3>
+                                <p>Respect des conventions collectives, règles internes et adaptation dynamique aux changements.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">🌐</span>
+                            <div class="feature-content">
+                                <h3>Interface web moderne</h3>
+                                <p>Front-end React/TypeScript/Tailwind, expérience utilisateur fluide, responsive et accessible (WCAG 2.1 AA).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">🔐</span>
+                            <div class="feature-content">
+                                <h3>Authentification & rôles</h3>
+                                <p>Gestion sécurisée des accès avec JWT, rôles Manager/Employé, internationalisation (fr-FR par défaut).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">📈</span>
+                            <div class="feature-content">
+                                <h3>Observabilité & monitoring</h3>
+                                <p>Logs structurés, métriques Prometheus, traces OpenTelemetry pour un suivi complet.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h2>Technologies utilisées</h2>
+                    <div class="technologies">
+                        <div class="tech-item">
+                            <h3>Backend</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>FastAPI</li>
+                                <li>OR-Tools</li>
+                                <li>PostgreSQL</li>
+                                <li>Loguru</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Frontend</h3>
+                            <ul>
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Orchestration & DevOps</h3>
+                            <ul>
+                                <li>Docker Compose</li>
+                                <li>GitHub Actions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>Ma contribution</h2>
+                    <p>Dans ce projet, j'ai été responsable de :</p>
+                    <ul class="contribution-list">
+                        <li>Conception de l'architecture microservices (FastAPI, PostgreSQL, OR-Tools)</li>
+                        <li>Développement du moteur de planification sous contraintes</li>
+                        <li>Implémentation des règles CCN et internes dans le moteur</li>
+                        <li>Création de l'interface web (React/TypeScript/Tailwind)</li>
+                        <li>Mise en place de l'authentification JWT et gestion des rôles</li>
+                        <li>Déploiement et monitoring (Docker Compose, Prometheus, OpenTelemetry)</li>
+                    </ul>
+
+                    <h2>Défis et apprentissages</h2>
+                    <p>Ce projet m'a permis de relever plusieurs défis majeurs :</p>
+                    <div class="challenges">
+                        <div class="challenge-item">
+                            <h3>Optimisation sous contraintes</h3>
+                            <p>Traduire des règles complexes (légales, conventionnelles, internes) en contraintes mathématiques pour OR-Tools et garantir la faisabilité des plannings.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Expérience utilisateur</h3>
+                            <p>Créer une interface moderne, accessible et agréable à utiliser pour des profils très variés (managers, RH, employés).</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Scalabilité & monitoring</h3>
+                            <p>Assurer la robustesse, la supervision et la maintenabilité de l'ensemble de la plateforme (logs, métriques, traces).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projets associés -->
+        <section class="related-projects">
+            <div class="container">
+                <h2>Autres projets</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="../images/project-logos/healtbot.png" alt="Logo HealthBot">
+                        </div>
+                        <div class="project-content">
+                            <h3>HealthBot</h3>
+                            <p>Assistant IA combinant LLM et données de santé pour fournir des informations personnalisées.</p>
+                            <a href="healthbot.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="../images/project-logos/justedance.png" alt="Logo JusteDanse">
+                        </div>
+                        <div class="project-content">
+                            <h3>JusteDanse</h3>
+                            <p>Système IoT de détection de mouvements pour analyser et améliorer les performances de danse.</p>
+                            <a href="justedanse.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="../images/project-logos/crewdata.png" alt="Logo CrewData">
+                        </div>
+                        <div class="project-content">
+                            <h3>CrewData</h3>
+                            <p>Outil d'analyse CSV utilisant des agents IA pour traiter et visualiser automatiquement les données.</p>
+                            <a href="crewdata.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-links">
+                <a href="../index.html#hero">Accueil</a>
+                <a href="../index.html#about">À propos</a>
+                <a href="../index.html#skills">Compétences</a>
+                <a href="../index.html#projects">Projets</a>
+                <a href="../index.html#experience">Expériences</a>
+                <a href="../index.html#contact">Contact</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html> 
